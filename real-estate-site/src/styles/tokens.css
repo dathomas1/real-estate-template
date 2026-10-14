@@ -19,6 +19,7 @@ The identical values are also exported as a JS object from src/data/site.ts)
   --color-primary-dark: #122944;    /* Deep Navy — hover states */
   --color-accent: #D4923A;          /* Warm Amber — primary CTAs */
   --color-accent-dark: #B87A2E;     /* Burnished Gold — CTA hover */
+  --color-outline: #ff0000;         /* Focus outline */
   --color-bg: #FAF7F2;              /* Linen White — page background */
   --color-bg-alt: #F0EBE1;          /* Soft Sand — alternating sections */
   --color-heading: #2C2C2C;         /* Charcoal */
@@ -31,6 +32,10 @@ The identical values are also exported as a JS object from src/data/site.ts)
   --color-info: #2980B9;            /* Info Blue */
 
   /* Compatibility aliases for previous scaffold references */
+  --brand-primary: var(--color-primary);
+  --brand-secondary: var(--color-accent);
+  --brand-neutral: var(--color-muted);
+  --brand-outline: var(--color-outline);
   --color-bg-warm: var(--color-bg);
   --color-bg-sand: var(--color-bg-alt);
   --color-bg-white: var(--color-white);
