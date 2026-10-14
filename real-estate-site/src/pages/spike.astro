@@ -1,0 +1,32 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import { Accordion, AccordionItem, Breadcrumbs, BreadcrumbsItem, Button } from 'accessible-astro-components'
+---
+
+<DefaultLayout title="Alyson Thomas of Premier Plus Realty" useTitleTemplate={false}>
+<Breadcrumbs>
+  <BreadcrumbsItem href="/" label="Home" />
+  <BreadcrumbsItem href="/products" label="Products" />
+  <BreadcrumbsItem label="Current Page" currentPage={true} />
+</Breadcrumbs>
+
+<Button>Default Button</Button>
+<Button type="primary">Primary Action</Button>
+<Button type="secondary">Secondary Action</Button>
+
+<Accordion>
+  <AccordionItem
+    name="astro"
+    title="What is Astro?"
+    open
+  >
+    <p>Astro is an all-in-one web framework for building fast, content-focused websites.</p>
+  </AccordionItem>
+  <AccordionItem
+    name="astro"
+    title="Why Astro?"
+  >
+    <p>Ship less JavaScript to your users while maintaining a modern developer experience.</p>
+  </AccordionItem>
+</Accordion>
+</DefaultLayout>

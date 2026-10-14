@@ -36,6 +36,11 @@ export default defineThemeConfig({
               href: '/portfolio',
             },
       {
+              type: 'link',
+              label: 'Spike',
+              href: '/spike',
+            },
+      {
               type: 'dropdown',
               label: 'Features',
               items: [
