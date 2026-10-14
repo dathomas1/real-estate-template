@@ -36,6 +36,11 @@ The identical values are also exported as a JS object from src/data/site.ts)
   --brand-secondary: var(--color-accent);
   --brand-neutral: var(--color-muted);
   --brand-outline: var(--color-outline);
+  --color-primary-bg: var(--color-primary);
+  --color-primary-border:: var(--color-primary);
+  --color-primary-text: var(--color-white);
+  
+  
   --color-bg-warm: var(--color-bg);
   --color-bg-sand: var(--color-bg-alt);
   --color-bg-white: var(--color-white);
