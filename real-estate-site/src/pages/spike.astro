@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro'
-import { Accordion, AccordionItem, Breadcrumbs, BreadcrumbsItem, Button } from 'accessible-astro-components'
+import { Heading, Card, Accordion, AccordionItem, Breadcrumbs, BreadcrumbsItem, Button } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
 ---
 
 <DefaultLayout title="Alyson Thomas of Premier Plus Realty" useTitleTemplate={false}>
@@ -29,4 +30,21 @@ import { Accordion, AccordionItem, Breadcrumbs, BreadcrumbsItem, Button } from '
     <p>Ship less JavaScript to your users while maintaining a modern developer experience.</p>
   </AccordionItem>
 </Accordion>
+
+<section class="p-8">
+<Heading level="h2" id="card">Card</Heading>
+<p class="mb-4">The Card component is used to display a card with a title, footer, and a media.</p>
+<Card
+  img="https://images.unsplash.com/photo-1620428268482-cf1851a36764?auto=format&fit=crop&q=100&w=800"
+  title="Card Title"
+  footer="Author name"
+>
+  <span slot="meta">
+    <Icon aria-hidden="true" name="lucide:clock" />
+    10 min read
+  </span>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo accusantium debitis
+  sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod veritatis laboriosam est tenetur.
+</Card>
+</section>
 </DefaultLayout>

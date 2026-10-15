@@ -157,3 +157,11 @@ body.theme .theme__emphasis {
    background-color: light-dark(var(--color-primary), var(--color-neutral-900));
    color: light-dark(var(--color-neutral-100), var(--color-neutral-100));
 }
+
+body.theme .card {
+   border: var(--border);
+}
+
+body.theme .card::hover {
+   box-shadow: var(--shadow-sm);
+}
