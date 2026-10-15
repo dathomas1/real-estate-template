@@ -13,12 +13,16 @@ interface Props {
    * The source URL for the image
    */
   src?: string
+  /**
+   * Additional classes to apply to the ResponsiveToggle
+   */
+  class?: string
 }
 
-const { src = '/astronaut-hero-img.webp' }: Props = Astro.props
+const { src = '/astronaut-hero-img.webp', class: className }: Props = Astro.props
 ---
 
-<section class="hero my-24">
+<section class:list={["hero", "py-24", className]}>
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
       <div class="col-span-2 flex flex-col items-center gap-8 md:items-start">

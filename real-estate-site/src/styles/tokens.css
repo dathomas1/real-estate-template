@@ -118,7 +118,7 @@ The identical values are also exported as a JS object from src/data/site.ts)
   --radius-lg: 12px;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(27, 58, 92, 0.15);
+  --shadow-sm: 0 2px 4px rgba(27, 58, 92, 0.15);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 4px 12px rgba(27, 58, 92, 0.25);
 
@@ -133,11 +133,25 @@ The identical values are also exported as a JS object from src/data/site.ts)
 
 body.theme {
   /* Compatibility aliases for components */
-  --color-primary-bg: var(--color-primary);
-  --color-primary-border: var(--color-primary);
+   --background-color: light-dark(var(--color-neutral-100), var(--color-neutral-900));
+   --foreground-color: light-dark(var(--color-neutral-900), var(--color-neutral-100));
+
+  --color-primary-bg: var(--color-primary-500);
+  --color-primary-border: var(--color-primary-500);
   --color-primary-text: var(--color-white);
 
   --color-secondary-border: light-dark(var(--color-secondary-100), var(--color-secondary-200));
   --color-secondary-bg: light-dark(var(--color-secondary-100), var(--color-secondary-200));
   --color-secondary-text: var(--color-primary-dark);
+}
+
+
+
+body.theme .theme__alternate {
+   background-color: light-dark(var(--color-bg-alt), var(--color-neutral-900));
+}
+
+body.theme .theme__emphasis {
+   background-color: light-dark(var(--color-primary), var(--color-neutral-900));
+   color: light-dark(var(--color-neutral-100), var(--color-neutral-100));
 }

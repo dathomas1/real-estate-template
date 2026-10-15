@@ -4,12 +4,13 @@ import Hero from '@components/Hero.astro'
 import Feature from '@components/Feature.astro'
 import FeaturedPosts from '@components/FeaturedPosts.astro'
 import FeaturedProjects from '@components/FeaturedProjects.astro'
+import { Link } from 'accessible-astro-components'
 ---
 
 <DefaultLayout title="Alyson Thomas of Premier Plus Realty" useTitleTemplate={false}>
-  <Hero />
+  <Hero class="theme__emphasis"/>
 
-  <section class="mb-24">
+  <section class="mb-24 py-16 theme__alternate">
     <div class="container grid gap-6 md:grid-cols-3">
       <Feature icon="lucide:layout-template" title="Start with real structure" level="h2">
         Edit theme.config.ts, replace placeholder copy, and shape the starter around your content model.
@@ -20,6 +21,17 @@ import FeaturedProjects from '@components/FeaturedProjects.astro'
       <Feature icon="lucide:accessibility" title="Build accessibly" level="h2">
         Navigation, color tokens, logical properties, and readable typography are ready from the start.
       </Feature>
+    </div>
+    <div class="mt-12 grid place-content-center">
+      <Link
+            href="https://github.com/incluud/accessible-astro-starter"
+            isButton
+            type="secondary"
+            animateOnHover
+            animationType="boop"
+          >
+            Get Your Free Home Valuation
+          </Link>
     </div>
   </section>
 
