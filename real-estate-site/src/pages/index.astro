@@ -4,22 +4,31 @@ import Hero from '@components/Hero.astro'
 import Feature from '@components/Feature.astro'
 import FeaturedPosts from '@components/FeaturedPosts.astro'
 import FeaturedProjects from '@components/FeaturedProjects.astro'
-import { Link } from 'accessible-astro-components'
+import { Link, Heading } from 'accessible-astro-components'
 ---
 
 <DefaultLayout title="Alyson Thomas of Premier Plus Realty" useTitleTemplate={false}>
   <Hero class="theme__emphasis"/>
 
   <section class="mb-24 py-16 theme__alternate">
+    <div class="text-center max-w-3xl mx-auto mb-14"> 
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-300 mb-3">
+        Highlands County Seller Advantage
+      </span> 
+      <Heading level="h2">Why Sellers Choose Alyson</Heading>
+      <p class="text-base sm:text-xl">
+        Selling a home in Sebring requires nuanced local market insight, disciplined pricing, and aggressive buyer outreach. Here is how Alyson delivers top-dollar results for Highlands County homeowners.
+      </p> 
+    </div>
     <div class="container grid gap-6 md:grid-cols-3">
-      <Feature icon="lucide:layout-template" title="Start with real structure" level="h2">
-        Edit theme.config.ts, replace placeholder copy, and shape the starter around your content model.
+      <Feature icon="lucide:chart-no-axes-combined" title="Expert Pricing Strategy" level="h3">
+        Alyson performs a Comparative Market Analysis (CMA) analyzing recent verified sales in your specific area to position your home at peak market value without risking costly days on market.
       </Feature>
-      <Feature icon="lucide:scissors" title="Keep what you need" level="h2">
-        This preset includes the blog, portfolio, contact flow, and reference pages so you can trim from a rich base.
+      <Feature icon="lucide:globe-check" title="Maximum Market Exposure" level="h3">
+        Every listing receives comprehensive marketing designed to captivate active buyers across Florida and out-of-state relocations. 
       </Feature>
-      <Feature icon="lucide:accessibility" title="Build accessibly" level="h2">
-        Navigation, color tokens, logical properties, and readable typography are ready from the start.
+      <Feature icon="lucide:heart-handshake" title="Personal Attention" level="h3">
+        When you list with Alyson, you work directly with her from the initial pre-listing consultation to closing day. You receive consistent updates every step of the journey.
       </Feature>
     </div>
     <div class="mt-12 grid place-content-center">

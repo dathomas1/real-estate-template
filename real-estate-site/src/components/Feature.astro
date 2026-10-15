@@ -62,18 +62,11 @@ const { icon = 'mdi:rocket', title = 'Title', level = 'h3' }: Props = Astro.prop
     &::before {
       z-index: 1;
       inset: 0;
-      box-shadow: 0 0 0 6px var(--color-neutral-100);
-      border: 3px solid var(--color-neutral-700);
+      border: var(--border);
       border-radius: var(--radius-l);
-      background-color: var(--color-neutral-100);
+      background-color: var(--color-white);
     }
 
-    &::after {
-      z-index: 0;
-      inset: var(--space-m) -0.85rem -0.85rem 1rem;
-      border-radius: var(--radius-l);
-      background-color: var(--link-color);
-    }
   }
 
   :global(.feature [data-icon]) {

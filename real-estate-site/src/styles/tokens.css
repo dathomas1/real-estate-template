@@ -129,6 +129,8 @@ The identical values are also exported as a JS object from src/data/site.ts)
   --focus-offset: 2px;
   --touch-target-min: 48px;
   --touch-target-gap: 8px;
+
+  --border: 1px solid var(--color-border);
 }
 
 body.theme {
