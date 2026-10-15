@@ -20,33 +20,32 @@ const { src = '/astronaut-hero-img.webp' }: Props = Astro.props
 
 <section class="hero my-24">
   <div class="container">
-    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
-      <div class="flex flex-col items-center gap-8 md:items-start">
-        <h1 class="text-center text-6xl md:text-left lg:text-8xl"><span class="text-gradient">Alyson</span> Thomas of Premier Plus Realty</h1>
+    <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
+      <div class="col-span-2 flex flex-col items-center gap-8 md:items-start">
+        <h1 class="text-center text-5xl md:text-left lg:text-7xl">Your Trusted Real Estate Agent in <span class="text-gradient">Sebring, Florida</span></h1>
 
         <p class="text-center text-2xl md:text-left">
-          A flexible starting point for publishing content, sharing work, and building accessibly with Astro.
+          Whether you're selling your home for top dollar or finding your Florida dream property, Alyson Thomas delivers neighborhood-level expertise, dedicated personal service, and proven results throughout Sebring and Highlands County.
         </p>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <Link
             href="https://github.com/incluud/accessible-astro-starter"
             isButton
-            type="primary"
-            animateOnHover
-            animationType="boop"
-          >
-            <Icon aria-hidden="true" name="lucide:star" size="1.5rem" />
-            Star on GitHub
-          </Link>
-          <Link
-            href="https://accessible-astro.incluud.dev/"
-            isButton
             type="secondary"
             animateOnHover
             animationType="boop"
           >
-            <Icon aria-hidden="true" name="lucide:bookmark" size="1.5rem" />
-            Read the docs
+            Get Your Free Home Valuation
+          </Link>
+          <Link
+            href="tel:+17223428085"
+            isButton
+            type="primary"
+            animateOnHover
+            animationType="boop"
+          >
+            <Icon aria-hidden="true" name="lucide:phone" size="1.5rem" />
+            Call (772) 342-8085
           </Link>
         </div>
       </div>

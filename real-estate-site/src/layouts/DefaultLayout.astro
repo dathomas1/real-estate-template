@@ -66,24 +66,6 @@ const imageUrl = new URL(imagePath, Astro.site).href
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- theme colors from config 
-    <style
-      define:vars={{
-        brandPrimary: themeConfig.colors.primary,
-        brandSecondary: themeConfig.colors.secondary,
-        brandNeutral: themeConfig.colors.neutral,
-        brandOutline: themeConfig.colors.outline,
-      }}
-    >
-      :global(:root) {
-        --brand-primary: var(--brandPrimary);
-        --brand-secondary: var(--brandSecondary);
-        --brand-neutral: var(--brandNeutral);
-        --brand-outline: var(--brandOutline);
-      }
-    </style>
-    -->
-
     <SEO
       title={title}
       titleTemplate={useTitleTemplate ? `%s - ${themeConfig.seo.title}` : undefined}
@@ -120,7 +102,7 @@ const imageUrl = new URL(imagePath, Astro.site).href
     <!-- Enable Astro View Transitions for all browsers -->
     <ClientRouter />
   </head>
-  <body>
+  <body class="theme">
     <Header />
     <main id="main-content" transition:animate="fade">
       <slot />
