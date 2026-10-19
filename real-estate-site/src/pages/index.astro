@@ -1,5 +1,6 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro'
+import ContentMedia from '@components/ContentMedia.astro'
 import Hero from '@components/Hero.astro'
 import Feature from '@components/Feature.astro'
 import FeaturedPosts from '@components/FeaturedPosts.astro'
@@ -43,7 +44,25 @@ import { Link, Heading } from 'accessible-astro-components'
           </Link>
     </div>
   </section>
-
+  <ContentMedia imgSrc="img/social-preview-image.png">
+    <Heading level="h2">Sebring, FL</Heading>
+    <p class="text-2xl">
+      Known as "The City on the Circle," Sebring combines peaceful Florida Heartland charm, over 80 freshwater lakes, championship golf courses, and an exceptionally accessible cost of living. Whether you are seeking a premier 55+ active adult community, a fairway estate, or a private lakefront sanctuary, Alyson Thomas provides the local market insight you need.</p>
+    <p>One reason for purchasing a home in Sebring is affordability. The single-family home price in Sebring gives buyers significantly more square footage, larger lot sizes, and modern community amenities for their investment.
+    </p>
+  </ContentMedia>
+  <ContentMedia imgSrc="img/social-preview-image.png" reverseImg={true}>
+    <Heading level="h2">WCAG 2.2 AA compliant</Heading>
+    <p class="text-2xl">
+      Avon Park is Highlands County’s oldest incorporated municipality, and its median home prices sit approximately 10% to 15% below neighboring Sebring. northern location shaves 15 to 20 minutes off the commute to Winter Haven, Lakeland, and the Greater Orlando metroplex.
+    </p>
+  </ContentMedia>
+<ContentMedia imgSrc="img/social-preview-image.png" reverseImg={true}>
+    <Heading level="h2">WCAG 2.2 AA compliant</Heading>
+    <p class="text-2xl">
+       Lake Placid is celebrated nationally as both Florida's "Town of Murals" and the "Caladium Capital of the World.  Lake Placid has a high concentration of second homes and seasonal residences. Buyers prioritize low-maintenance landscaping, hurricane shutters, screened lanais, and garage space for golf carts and boat trailers.
+    </p>
+  </ContentMedia>
   <FeaturedPosts />
   <FeaturedProjects />
 </DefaultLayout>
