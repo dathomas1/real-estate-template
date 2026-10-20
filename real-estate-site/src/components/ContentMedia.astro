@@ -21,14 +21,13 @@ interface Props {
 const { imgSrc, reverseImg = false }: Props = Astro.props
 ---
 
-<section class="py-64">
+<section class="py-16 lg:py-24">
   <div class="container">
     <div class="grid grid-cols-1 gap-24 md:grid-cols-2">
-      {!reverseImg ? <Media class="rounded-lg" src={imgSrc} /> : ''}
       <div class="space-content flex flex-col justify-center">
         <slot />
       </div>
-      {reverseImg ? <Media class="rounded-lg" src={imgSrc} /> : ''}
+      {reverseImg ? <Media class="rounded-lg order-last md:order-first" src={imgSrc} /> : <Media class="rounded-lg order-last md:order-last" src={imgSrc} />}
     </div>
   </div>
 </section>
