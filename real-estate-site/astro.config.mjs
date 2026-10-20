@@ -36,7 +36,8 @@ const viteConfig = {
 
 export default defineConfig({
   compressHTML: true,
-  site: 'https://example.com',
+  site: 'https://dathomas1.github.io',
+  base: 'real-estate-template',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: viteConfig,
   env: {
