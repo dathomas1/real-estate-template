@@ -1,0 +1,20 @@
+{
+    "darkmode": true,
+    "items": [
+      {
+              "type": "link",
+              "label": "Home",
+              "href": "/"
+            },
+      {
+              "type": "link",
+              "label": "About",
+              "href": "/about"
+            },
+      {
+              "type": "link",
+              "label": "Contact",
+              "href": "/contact"
+            }
+    ]
+  }

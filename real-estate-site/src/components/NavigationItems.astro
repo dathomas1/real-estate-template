@@ -1,5 +1,6 @@
 ---
 import themeConfig from '@theme-config'
+import nav from '@data/nav'
 import { Link, DarkMode } from 'accessible-astro-components'
 
 import { Icon } from 'astro-icon/components'
@@ -17,7 +18,7 @@ const isCurrentPage = (href: string): boolean => {
 
 <ul class="menu">
   {
-    themeConfig.navigation.items.map((item) => (
+    nav.items.map((item) => (
       <li class={`menu-item ${item.type === 'dropdown' ? 'has-dropdown' : ''}`}>
         {item.type === 'dropdown' ? (
           <button aria-haspopup="true" aria-expanded="false">
@@ -62,7 +63,7 @@ const isCurrentPage = (href: string): boolean => {
     ))
   }
   {
-    themeConfig.navigation.darkmode && (
+    nav.darkmode && (
       <li class="menu-item type-icon animate-rotate">
         <DarkMode>
           <Icon aria-hidden="true" name="lucide:moon" slot="light" />

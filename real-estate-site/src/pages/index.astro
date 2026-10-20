@@ -6,10 +6,12 @@ import Feature from '@components/Feature.astro'
 import FeaturedPosts from '@components/FeaturedPosts.astro'
 import FeaturedProjects from '@components/FeaturedProjects.astro'
 import { Link, Heading } from 'accessible-astro-components'
+import { Image } from 'astro:assets'
+import localImage from '../assets/img/astronaut-hero-img.webp'
 ---
 
 <DefaultLayout title="Alyson Thomas of Premier Plus Realty" useTitleTemplate={false}>
-  <Hero class="theme__emphasis"/>
+  <Hero class="theme__emphasis" />
 
   <section class="py-16 theme__alternate">
     <div class="text-center max-w-3xl mx-auto mb-14"> 

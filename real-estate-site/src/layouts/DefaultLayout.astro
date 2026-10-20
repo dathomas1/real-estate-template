@@ -62,10 +62,13 @@ const imageUrl = new URL(imagePath, Astro.site).href
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    
+    <!-- ⬇️ THIS FIXES ALL PUBLIC ASSETS AND NAVIGATION LINKS AT ONCE ⬇️ -->
+    <base href={import.meta.env.BASE_URL + "/"} />
+    
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    
     <SEO
       title={title}
       titleTemplate={useTitleTemplate ? `%s - ${themeConfig.seo.title}` : undefined}

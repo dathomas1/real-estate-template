@@ -21,6 +21,7 @@ const viteConfig = {
   resolve: {
     alias: {
       '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
+      '@data': fileURLToPath(new URL('./src/data', import.meta.url)),
       '@layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
       '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       '@content': fileURLToPath(new URL('./src/content', import.meta.url)),
@@ -36,7 +37,7 @@ const viteConfig = {
 
 export default defineConfig({
   compressHTML: true,
-  site: 'https://dathomas1.github.io',
+  site: 'https://dathomas1.github.io/',
   base: 'real-estate-template',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: viteConfig,
